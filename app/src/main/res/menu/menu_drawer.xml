@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@mipmap/ic_dashboard"
+            android:title="Home" />
+        <item
+            android:icon="@mipmap/ic_forum"
+            android:title="Setting" />
+        <item
+            android:icon="@mipmap/ic_event"
+            android:title="Like" />
+        <item
+            android:icon="@mipmap/ic_headset"
+            android:title="Music" />
+    </group>
+</menu>

@@ -1,0 +1,77 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="doge">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/doge"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_overlapTop="30dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardElevation="8dp"
+            app:contentPadding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="这只可爱的柴犬叫Kabosu（かぼす，一种类似于日本柚子的水果，果汁很酸却有种独特的芳香，经常被用作烤鱼或生鱼片的调料），曾经被主人弃养，还差点遭到安乐死，2008年11月被现主人——日本一位幼儿园的老师Atsuko Sato收养，生活才有了转变。现家中除了它以外，还有主人后来收养的另外两只叫银杏和杜鹃的猫咪陪伴，主人还特地为它们开了博客“和Kabosu酱一起散步（かぼすちゃんとおさんぽ）”，记录它们的日常生活。\n2010年2月23日，主人AtsukoSato在自己的博客上发布了Kabosu的一系列照片，其中一张照片中，柴犬倚靠在沙发上，前爪相叠，侧身瞪眼竖起眉毛，传神的表情令人忍俊不禁，照片迅速在美国的Reddit（美国最大的网上社区）和Tumblr（轻博客）等网络圈走红，最终出现在“柴犬的自白”（ShibaConfessions）博客中。“柴犬笑话”(被称为DogeMeme)通过Facebook、Tumblr等社交网络工具开始大规模流行，在欧美各大搜索引擎的搜索率呈爆发式增长，而在中国微博上也产生了爆炸式的传播。
+               \n 2013年年底，这张柴犬的照片被广泛流传开来，doge竟意外地在Reddit（美国最大的网上社区）和Tumblr（轻博客）上重新走红，最终出现在“柴犬的自白”（Shiba Confessions）博客中，也就是这只配有内心独白的柴犬。“柴犬笑话”(被称为Doge Meme)通过Facebook、Tumblr等社交网络工具开始大规模流行，在欧美各大搜索引擎的搜索率呈爆发式增长。网上流行的图片，多是以柴犬照片配上Comic Sans字体的简单英文，常出现“very”，“so”，“wow”等代表性字眼，或者将柴犬的五官PS到其他物体上，有时候还会用PS大法改变柴犬的面容，让它看起来更像人类的表情，以达到“反差萌”的效果。视频网站YouTube也顺应了这个潮流，为doge专门做个彩蛋，当你在YouTube搜索doge meme的时候，搜索结果页面会变成Comic sans字体了，文字还是五彩缤纷的颜色。[1]  网络小游戏大热Flappy bird大热时，克隆版的 flappy Doge 也应运而生，主角从鸟变成了这条可爱的柴犬。在MTV评选的“2013五十大流行文化事件”（50 Things Pop Culture Had Us Giving Thanks For）中，Doge的走红排在第12位。" />
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@mipmap/ic_heart_outline_white_24dp"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|right|end|center_vertical" />
+
+
+</android.support.design.widget.CoordinatorLayout>
